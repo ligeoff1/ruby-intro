@@ -30,9 +30,29 @@ puts "tacos" * 3
 puts "tacos" + 3.to_s
 puts "tacos" + "3"
 
-# Variables
+# Variables (leftside is the variable, rightside is the variable value, will execute, but will not be an output because you aren't telling to display anything)
+a = 10
+b = 3
+puts a * b
 
+food = "tacos"
+quantity = 3
+puts food * quantity
 
 # Combine strings and variables
+first_name = "Boba"
+greeting = "Hello, " + first_name
+puts greeting
+
+# OR 
+greeting = "Hello, #{first_name}" #string interpolation
+puts greeting
+
+puts "#{food} #{3}"
 
 # String manipulation
+puts "Hello".reverse #reverse the order
+puts "Hello".length #character length/count
+
+creed = "This Is the Way"
+puts creed.upcase
