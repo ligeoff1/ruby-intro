@@ -2,11 +2,38 @@
 # is the same as where this file is located and then run:
 # ruby 3-arrays.rb
 
-# Arrays are lists of things
+# Arrays are lists of things - will output on its own lines, will be a single entity horizontally
+favorite_foods = ["tacos", "pizza", "ice cream"]
+p favorite_foods
+
+#we_have_to_go_back = [4,8,15,16,23,42]
+#puts we_have_to_go_back
+
+#mixed_array = ["tacos", 12, true]
+#puts mixed_array 
+
+shopping_list = [["coffee","oatly","diapers"], ["beer", "tacos"]] # you can have an array within an array 
+puts shopping_list
 
 # Accessing the array
+puts favorite_foods[0]
+puts favorite_foods[1]
+puts favorite_foods[2]
+puts favorite_foods[3]
+puts favorite_foods[-1] #will go backwards - last element in the array 
 
-# Add to the array
+
+puts shopping_list[1][1] #index 1, position 1 - remember 0 is a position - this is what you'd use to return tacos
+
+# Add to the array - using push 
+favorite_foods.push("more tacos")
+p favorite_foods
+
+#OR can combine directly into the array vs. push 
+favorite_foods = favorite_foods + ["more tacos"]
+p favorite_foods
 
 # There are lots of fun things you can do with arrays:
 # https://ruby-doc.org/core-2.7.0/Array.html
+puts favorite_foods.size
+puts favorite_foods.count
